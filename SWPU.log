@@ -1,0 +1,19 @@
+2019-06-28 08:39:58.837  INFO 12772 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-28 08:39:58.844  INFO 12772 --- [Thread-39] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-06-28 08:39:58.846  INFO 12772 --- [Thread-39] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-06-28 13:12:54.833  INFO 13787 --- [main] com.swpu.student.StudentApplication      : Starting StudentApplication on zhupengdeMacBook-Pro.local with PID 13787 (/workspace/repository/manager/target/classes started by zhupeng in /workspace/repository/manager)
+2019-06-28 13:12:54.837  INFO 13787 --- [main] com.swpu.student.StudentApplication      : No active profile set, falling back to default profiles: default
+2019-06-28 13:12:56.731  INFO 13787 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-06-28 13:12:56.762  INFO 13787 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-28 13:12:56.763  INFO 13787 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 13:12:56.901  INFO 13787 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/swpu]   : Initializing Spring embedded WebApplicationContext
+2019-06-28 13:12:56.901  INFO 13787 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1935 ms
+2019-06-28 13:12:57.126  INFO 13787 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-28 13:12:58.007  INFO 13787 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,wms} inited
+2019-06-28 13:12:58.443  INFO 13787 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-28 13:12:58.536  INFO 13787 --- [main] com.swpu.student.config.WebMvcConfig     : /workspace/repository/manager/avatar/
+2019-06-28 13:12:58.732  INFO 13787 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path '/swpu'
+2019-06-28 13:12:58.735  INFO 13787 --- [main] com.swpu.student.StudentApplication      : Started StudentApplication in 19.406 seconds (JVM running for 25.023)
+2019-06-28 15:57:51.131  INFO 13787 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-28 15:57:51.137  INFO 13787 --- [Thread-41] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-06-28 15:57:51.159  INFO 13787 --- [Thread-41] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

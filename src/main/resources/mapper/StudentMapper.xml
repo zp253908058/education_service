@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.swpu.student.web.dao.StudentDao">
+
+    <select id="getStudentInfoByNumber" resultType="StudentDto">
+        select m.major_name,
+               s.student_number,
+               s.student_name,
+               case
+                   when s.sex = 1 then '男'
+                   when s.sex = 2 then '女'
+                   else '未知' end as sex,
+               s.phone_number
+        from student_info s
+                 left join major m on s.major_id = m.id
+        where student_number = #{number}
+    </select>
+</mapper>

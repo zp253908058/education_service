@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.swpu.student.web.dao.SignDao">
+
+    <select id="findStudent" resultType="Long">
+        select id
+        from student_auth
+        where student_number = #{number}
+          and pwd = #{password}
+    </select>
+
+    <update id="updateLoginDate">
+        update student_auth
+        set last_auth_date = CURRENT_TIMESTAMP
+        where student_number = #{number}
+    </update>
+</mapper>
