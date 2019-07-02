@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.swpu.student.web.dao.EventDao">
+
+    <select id="getEvents" resultType="EventDto">
+        select e.id, e.event_name
+        from event e
+                 left join event_member m on e.id = m.event_id
+        where e.status = 0
+          and m.student_number = #{number}
+    </select>
+
+</mapper>

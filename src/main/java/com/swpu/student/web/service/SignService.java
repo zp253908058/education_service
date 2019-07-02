@@ -1,7 +1,6 @@
 package com.swpu.student.web.service;
 
 import com.swpu.student.web.dto.StudentDto;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Class description:
