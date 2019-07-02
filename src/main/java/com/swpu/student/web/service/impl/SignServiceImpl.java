@@ -41,7 +41,6 @@ public class SignServiceImpl implements SignService {
         if (id == null || id <= 0) {
             throw new UserNotFoundException();
         }
-        mSignDao.updateLoginDate(number);
         return mStudentDao.getStudentInfoByNumber(number);
     }
 }

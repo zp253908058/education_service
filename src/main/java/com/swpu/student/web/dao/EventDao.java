@@ -1,6 +1,7 @@
 package com.swpu.student.web.dao;
 
 import com.swpu.student.web.dto.EventDto;
+import com.swpu.student.web.dto.TaskDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -20,4 +21,6 @@ import java.util.List;
 public interface EventDao {
 
     List<EventDto> getEvents(String number);
+
+    List<TaskDto> getTasks(long eventId);
 }

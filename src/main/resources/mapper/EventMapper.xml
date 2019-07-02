@@ -11,4 +11,11 @@
           and m.student_number = #{number}
     </select>
 
+    <select id="getTasks" resultType="TaskDto">
+        select task.id, task.task_name,type.task_type,task.task_end_date
+        from task
+                 inner join task_type type on task.task_type_id = type.id
+        where task.event_id = #{eventId}
+    </select>
+
 </mapper>

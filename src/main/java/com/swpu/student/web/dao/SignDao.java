@@ -16,6 +16,4 @@ import org.springframework.stereotype.Repository;
 public interface SignDao {
 
     Long findStudent(String number, String password);
-
-    void updateLoginDate(String number);
 }

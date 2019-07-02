@@ -2,6 +2,7 @@ package com.swpu.student.web.service.impl;
 
 import com.swpu.student.web.dao.EventDao;
 import com.swpu.student.web.dto.EventDto;
+import com.swpu.student.web.dto.TaskDto;
 import com.swpu.student.web.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,5 +30,10 @@ public class EventServiceImpl implements EventService {
     @Override
     public List<EventDto> getEvents(String number) {
         return mEventDao.getEvents(number);
+    }
+
+    @Override
+    public List<TaskDto> getTasks(long eventId) {
+        return mEventDao.getTasks(eventId);
     }
 }

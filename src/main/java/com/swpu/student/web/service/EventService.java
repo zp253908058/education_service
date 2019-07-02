@@ -1,6 +1,7 @@
 package com.swpu.student.web.service;
 
 import com.swpu.student.web.dto.EventDto;
+import com.swpu.student.web.dto.TaskDto;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ import java.util.List;
 public interface EventService {
 
     List<EventDto> getEvents(String number);
+
+    List<TaskDto> getTasks(long eventId);
 }

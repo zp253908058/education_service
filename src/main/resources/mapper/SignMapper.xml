@@ -9,10 +9,4 @@
         where student_number = #{number}
           and pwd = #{password}
     </select>
-
-    <update id="updateLoginDate">
-        update student_auth
-        set last_auth_date = CURRENT_TIMESTAMP
-        where student_number = #{number}
-    </update>
 </mapper>
