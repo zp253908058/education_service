@@ -3,7 +3,6 @@ package com.swpu.student.web.controller;
 import com.swpu.student.web.dto.EventDto;
 import com.swpu.student.web.dto.TaskDto;
 import com.swpu.student.web.service.EventService;
-import org.apache.ibatis.type.Alias;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +36,7 @@ public class EventController {
     }
 
     @GetMapping("/task")
-    public List<TaskDto> getTasks(@RequestParam("event_id") long eventId){
+    public List<TaskDto> getTasks(@RequestParam("event_id") long eventId) {
         return mEventService.getTasks(eventId);
     }
 }

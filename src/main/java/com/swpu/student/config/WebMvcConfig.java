@@ -28,7 +28,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public MultipartConfigElement multipartConfigElement(){
+    public MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
         //文件最大KB,MB
         factory.setMaxFileSize(DataSize.ofMegabytes(10));

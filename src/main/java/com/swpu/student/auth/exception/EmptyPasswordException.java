@@ -8,7 +8,7 @@ package com.swpu.student.auth.exception;
  * @see EmptyPasswordException
  * @since 2019-06-19
  */
-public class EmptyPasswordException  extends RuntimeException {
+public class EmptyPasswordException extends RuntimeException {
     public EmptyPasswordException() {
         super("password is empty.");
     }

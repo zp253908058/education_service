@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
  * Description: funchat
  * Created by Zhu Peng on 2019/6/23
  */
-public class CannotInvokeException extends RuntimeException{
+public class CannotInvokeException extends RuntimeException {
     private static final long serialVersionUID = 1L;
     private Throwable err = null;
 
